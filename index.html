@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iftar Time schedulee</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+  font-family: SolaimanLipiNormal;
+  font-size: 15px;
+  line-height: 150%;
+}
+@font-face {
+  font-family: SolaimanLipiNormal;
+  src: url(fonts/solaimanlipi_20-04-07.eot);
+  src: url(fonts/solaimanlipi_20-04-07.eot) format("embedded-opentype"),
+    url(fonts/solaimanlipi_20-04-07.woff) format("woff"),
+    url(fonts/solaimanlipi_20-04-07.ttf) format("truetype"),
+    url(fonts/solaimanlipi_20-04-07.svg#SolaimanLipiNormal) format("svg");
+}
+      .iter_sehri_time_schedule {
+        width: 625px;
+        height: auto;
+        background: #e6e7e8;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border: 1px solid #000;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .iafter_schedule h3 {
+        font-size: 20px;
+        text-align: center;
+        padding: 5px 10px;
+        background-color: brown;
+        color: white;
+        margin-bottom: 21px;
+      }
+
+      .time_schedule {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 15px;
+        border-bottom: 5px solid brown;
+      }
+      .time {
+        font-size: 25px;
+        margin-right: 20px;
+      }
+      .time:last-child {
+        margin-right: 0;
+      }
+      .effectuve_zone{
+        position: relative;
+      }
+      .only_for_dhaka {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: brown;
+    border-radius: 0 0 5px 5px;
+    padding: 0 5px;
+}
+
+      .iafter_schedule{
+        position: relative;
+        display: none;
+      }
+      .show{
+        display: block;
+      }
+      .effectuve_zone {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+}
+
+.iafter_schedule h3,
+.only_for_dhaka h4 {
+    font-weight: normal;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+      .iter_sehri_time_schedule {
+      width: fit-content;
+      margin: 25px auto 0;
+      flex-direction: column;
+  }
+  div#only_iftar,
+  div#only_sehri {
+      margin-bottom: 16px;
+    width: 100%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="iter_sehri_time_schedule">
+      <!-- iftar time schedule -->
+      <div id="only_iftar" class="iafter_schedule show">
+        <h3>ইফতারের সময় বাকি আছে</h3>
+        <div class="time_schedule">
+          <div class="time"><span id="hours_iafter"> 00 </span> ঘন্টা</div>
+          <div class="time"><span id="minutes_iafter"> 00 </span> মিনিট</div>
+          <div class="time"><span id="seconds_iafter"> 00 </span> সেকেন্ড</div>
+        </div>
+        <div class="effectuve_zone">
+            <div class="only_for_dhaka">
+                <h4> শুধুমাত্র ঢাকা জেলার জন্য প্রযোজ্য </h3>
+            </div>
+        </div> 
+      </div>
+      
+      <!-- sehri time schedule -->
+      <div id="only_sehri" class="iafter_schedule">
+        <h3>সেহরির সময় বাকি আছে</h3>
+        <div class="time_schedule">
+          <div class="time"><span id="hours_sehri"> 00 </span> ঘন্টা</div>
+          <div class="time"><span id="minutes_sehri"> 00 </span> মিনিট</div>
+          <div class="time"><span id="seconds_sehri"> 00 </span> সেকেন্ড</div>
+        </div>
+        <div class="effectuve_zone">
+            <div class="only_for_dhaka">
+                <h4> শুধুমাত্র ঢাকা জেলার জন্য প্রযোজ্য </h3>
+            </div>
+        </div> 
+      </div> 
+
+      <div class="advertisement">
+        <img src="images/Pragati_Life_Insurance_Monthly.gif" alt="" />
+      </div>
+
+      <script src="js/index.js"></script>
+    </div>
+  </body>
+</html>
