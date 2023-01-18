@@ -100,13 +100,13 @@ setInterval(function () {
   const sehriTime_con = new Date(ddd + "Jan 2023 18:50:00");
 
   const currentTime_con = new Date();
-  const remSehritime = sehriTime_con - currentTime_con;
-  const sehri_sconds = Math.floor(sehriTime_con / 1000);
+  const remSehritime2 = sehriTime_con - currentTime_con;
+  const sehri_sconds = Math.floor(remSehritime2 / 1000);
 
-  if (totalSeconds <= 0) {
+  if (totalSeconds < 0) {
     document.getElementById("only_sehri").classList.add("show");
     document.getElementById("only_iftar").classList.remove("show");
-  } else if (sehri_sconds <= 0) {
+  } else if (sehri_sconds < 0) {
     document.getElementById("only_sehri").classList.remove("show");
     document.getElementById("only_iftar").classList.add("show");
   }
