@@ -90,9 +90,9 @@ setInterval(function () {
     totalHours = "0" + totalHours;
   }
 
-  seconds_iafter.innerHTML = totalSeconds;
-  minutes_iafter.innerHTML = totalMinutes;
-  hours_iafter.innerHTML = totalHours;
+  seconds_iafter.innerHTML = replace_bangla(totalSeconds);
+  minutes_iafter.innerHTML = replace_bangla(totalMinutes);
+  hours_iafter.innerHTML = replace_bangla(totalHours);
 
   let ddd = new Date();
   ddd = ddd.getDate();
