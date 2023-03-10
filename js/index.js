@@ -7,7 +7,7 @@ setInterval(function () {
   let d = new Date();
   d = d.getDate() + 1;
 
-  const sehriTime = new Date(d + "Jan 2023 04:39:00");
+ const sehriTime = new Date(d + "Mar 2023 04:39:00");
   const currentTime = new Date();
 
   const remSehritime = sehriTime - currentTime;
@@ -55,7 +55,7 @@ setInterval(function () {
   let dd = new Date();
   dd = dd.getDate();
 
-  const iftarTime = new Date(dd + "Jan 2023 18:42:00");
+  const iftarTime = new Date(dd + "Mar 2023 18:42:00");
 
   const currentTime = new Date();
   let remTime = iftarTime - currentTime;
